@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to test application</title>
+    <link type="text/css" href="css/main.css">
+</head>
+<body>
+    <h1>Welcome to test application</h1>
+    <p>Version: </p>
+</body>
+<script>
+    var app = {
+        version: '%%GULP_INJECT_VERSION%%'
+    };
+
+    document.querySelector('p').innerHTML += app.version;
+</script>
+
+</html>
